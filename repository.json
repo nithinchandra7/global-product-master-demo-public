@@ -1,0 +1,8 @@
+{
+  "project": "master",
+  "name": "global-product-master-demo-public",
+  "app": "solution_labs.app:app",
+  "docs": "solution-labs/master/docs",
+  "portfolio": "https://nithinchandra.com",
+  "baseline": "764057a"
+}

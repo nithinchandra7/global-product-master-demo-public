@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Product Master Lab — Nithin Chandra</title>
+    <meta
+      name="description"
+      content="Normalize regional product records, inspect match evidence, resolve ambiguity, and publish a consistent global master."
+    />
+    <link rel="icon" href="../favicon.svg" />
+    <link rel="stylesheet" href="../solution-labs/labs.css" />
+    <link rel="stylesheet" href="../technical-graph.css" />
+    <script src="../technical-graph.js" defer></script>
+    <script src="../solution-labs/architecture.js" defer></script>
+    <script src="../solution-labs/labs.js" defer></script>
+  </head>
+  <body data-project="master">
+    <header>
+      <a class="brand" href="https://nithinchandra.com">nc.</a>
+      <nav>
+        <a href="https://nithinchandra.com">Original case study ↗</a
+        ><a
+          href="https://github.com/nithinchandra7/tire-recommendation-demo-public"
+          >Tire Lab</a
+        ><a
+          href="https://github.com/nithinchandra7/beauty-data-platform-demo-public"
+          >Other lab</a
+        >
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <span class="eyebrow">INDEPENDENT BUILD / Product Master Lab</span>
+        <h1>One product identity.<br />Every regional perspective.</h1>
+        <p>
+          Normalize regional product records, inspect match evidence, resolve
+          ambiguity, and publish a consistent global master.
+        </p>
+      </div>
+      <div class="provenance">
+        Synthetic data · simulated identity · local Python / SQLite · cloud
+        services are reference scaffolds
+      </div>
+      <nav class="tabs" role="tablist" aria-label="Demo views">
+        <button
+          role="tab"
+          data-view="workspace"
+          aria-controls="workspace"
+          aria-selected="true"
+        >
+          Working demo</button
+        ><button
+          role="tab"
+          data-view="architecture"
+          aria-controls="architecture"
+          aria-selected="false"
+        >
+          Architecture</button
+        ><button
+          role="tab"
+          data-view="evidence"
+          aria-controls="evidence"
+          aria-selected="false"
+        >
+          Evidence</button
+        ><button
+          role="tab"
+          data-view="walkthrough"
+          aria-controls="walkthrough"
+          aria-selected="false"
+        >
+          Walkthrough
+        </button>
+      </nav>
+      <div id="notice" role="status"></div>
+      <section id="workspace" role="tabpanel">
+        <form id="start" class="controls">
+          <label
+            >Demo identity<select id="identity">
+              <option value="steward">Simulated global steward</option>
+              <option value="viewer">Simulated read-only viewer</option>
+            </select></label
+          ><label
+            >Scenario<select id="scenario">
+              <option value="standard">Ambiguity + source conflict</option>
+              <option value="clean">Clean cross-region publication</option>
+            </select></label
+          ><button id="run">Start fresh workspace →</button
+          ><span id="run-meta" class="small"></span>
+        </form>
+        <div id="stats" class="stats"></div>
+        <div id="results"></div>
+        <div id="trace" class="panel"></div>
+      </section>
+      <section id="architecture" role="tabpanel" hidden>
+        <h2>Follow the whole solution.</h2>
+        <p class="small">
+          Select a component to highlight its incoming/outgoing connections.
+          Cloud mode is a reference design; no cloud accounts are active.
+        </p>
+        <div class="controls">
+          <label
+            >Architecture mode<select id="map-mode">
+              <option value="local">Implemented locally</option>
+              <option value="cloud">Cloud reference bindings</option>
+            </select></label
+          ><button id="reset-map" class="secondary">Show all connections</button
+          ><a id="map-download" class="button secondary" download
+            >Download SVG ↓</a
+          >
+        </div>
+        <div id="map-key"></div>
+        <div class="architecture-layout">
+          <div id="map" class="map-wrap"></div>
+          <aside>
+            <label for="component-select" class="small"
+              >Select a component</label
+            ><select id="component-select"></select>
+            <div id="inspector" class="inspector"></div>
+          </aside>
+        </div>
+      </section>
+      <section id="evidence" role="tabpanel" hidden>
+        <h2>Proof you can inspect.</h2>
+        <p class="small">
+          Original work: primary technical consultant driving solution design
+          and delivery, hands-on with Snowflake and Azure. This independent
+          build uses synthetic records.
+        </p>
+        <div class="evidence-grid">
+          <a class="evidence-link" href="artifacts/source.zip"
+            ><strong>Runnable source ↗</strong
+            ><small
+              >This project's standalone source; credentials excluded</small
+            ></a
+          ><a class="evidence-link" href="artifacts/architecture.md"
+            ><strong>Architecture & contracts ↗</strong
+            ><small>Implemented boundaries and cloud replacements</small></a
+          ><a class="evidence-link" href="artifacts/evaluation.md"
+            ><strong>Measured evaluation ↗</strong
+            ><small>Correctness cases and local p50 / p95</small></a
+          ><a class="evidence-link" href="artifacts/openapi.json"
+            ><strong>API contract ↗</strong
+            ><small>Project endpoints and typed request schemas</small></a
+          ><a class="evidence-link" href="artifacts/data-model.svg"
+            ><strong>Data model ↗</strong
+            ><small>Identity / grain / lineage contracts</small></a
+          ><a class="evidence-link" href="artifacts/runtime-sequence.svg"
+            ><strong>Runtime sequence ↗</strong
+            ><small>Requests, decisions and publication</small></a
+          ><a class="evidence-link" href="artifacts/ingestion-flow.svg"
+            ><strong>Ingestion & recovery ↗</strong
+            ><small>Quality gate, replay and retained versions</small></a
+          ><a class="evidence-link" href="artifacts/cloud-setup.md"
+            ><strong>Cloud scaffolds ↗</strong
+            ><small>Account placeholders and activation limits</small></a
+          ><a class="evidence-link" href="artifacts/review.md"
+            ><strong>Review & checks ↗</strong
+            ><small>Independent findings, fixes and verification</small></a
+          ><a class="evidence-link" href="artifacts/adr-01-correctness.md"
+            ><strong>Correctness decisions ↗</strong
+            ><small>Identity / financial grain</small></a
+          ><a class="evidence-link" href="artifacts/adr-02-publication.md"
+            ><strong>Publication decisions ↗</strong
+            ><small>Consistent snapshots and fail-closed behavior</small></a
+          ><a class="evidence-link" href="artifacts/adr-03-access.md"
+            ><strong>Access decisions ↗</strong
+            ><small>Simulated identity and production replacement</small></a
+          ><a class="evidence-link" href="artifacts/adr-04-ai-boundary.md"
+            ><strong>AI boundaries ↗</strong
+            ><small>What models may and may not decide</small></a
+          ><a class="evidence-link" href="artifacts/operations.md"
+            ><strong>Operations guide ↗</strong
+            ><small
+              >Failure handling, replay, metrics and release checks</small
+            ></a
+          ><a class="evidence-link" href="artifacts/manifest.json"
+            ><strong>Evidence manifest ↗</strong
+            ><small>SHA256 hashes of published evidence files</small></a
+          >
+        </div>
+      </section>
+      <section id="walkthrough" role="tabpanel" hidden>
+        <h2>Two minutes. Actual synthetic outputs.</h2>
+        <div class="video-layout">
+          <video
+            controls
+            preload="metadata"
+            poster="artifacts/walkthrough-poster.png"
+          >
+            <source src="artifacts/walkthrough.mp4" type="video/mp4" />
+            <track
+              kind="captions"
+              srclang="en"
+              label="English"
+              src="artifacts/walkthrough.vtt"
+              default
+            />
+          </video>
+          <div>
+            <p>
+              A rendered walkthrough based on executed demo outputs. This is not
+              a recording of the original client application or the browser
+              interface.
+            </p>
+            <a
+              class="button secondary"
+              href="artifacts/walkthrough.mp4"
+              download
+              >Download video ↓</a
+            >
+            <p>
+              <a href="artifacts/walkthrough-script.md"
+                >Read the chapter script ↗</a
+              >
+            </p>
+            <p class="small">
+              Original work: primary technical consultant driving solution
+              design and delivery, hands-on with Snowflake and Azure. This
+              independent build uses synthetic records.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Nithin Chandra ·
+      <a href="mailto:nithinchandra357@gmail.com">Get in touch</a> · Synthetic
+      demonstration; cloud execution unverified.
+    </footer>
+  </body>
+</html>

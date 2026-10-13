@@ -1,0 +1,26 @@
+{
+  "sha256": {
+    "README.md": "24658c56eae02553b34fbc0fe6d548b0de848fcd8d90b6898f1b7d93702518f8",
+    "adr-01-correctness.md": "c781c610a0b482aeed7ad735591546d06442b50ddaa632b2b1bccce6a017b947",
+    "adr-02-publication.md": "ac58f1687eec40581861a2dfd3a5af7b80bdb0747c0cfedbd4db208bfa27a70c",
+    "adr-03-access.md": "d331ece9e83208638b228dbd6272ab26492097208695f748bab3cd953b0c6f4f",
+    "adr-04-ai-boundary.md": "64e670df0bc5260d4bc47e4d2512c3b1511fee8cdea72d11f62ee85620687eef",
+    "architecture.md": "fe68665c5e2d98a1fcdf20d81fab5efae4b167f49dd25ca77c6831bb1f687c41",
+    "cloud-architecture.svg": "830d21f99039ca30c8350a1d818013d87cd131f6f73cfe1e1461e5f636b79c17",
+    "cloud-setup.md": "79ae8885c4f4d6c3151f53cd5750e8d759c92f18188007a115499b584039ace6",
+    "data-model.svg": "c762dbe6cf8dc481c39ba46bb2119a88b42c886704cca6eae6a10e774b42369c",
+    "evaluation.json": "8696d354a9312411618d4b81765ea4cc2b5a90949eae7f2b4528eecdfb9a12f5",
+    "evaluation.md": "ba5c2c5a5e6460958d67d3d3033074dbdc96db47db86c95d1cd8d53ed1f8b506",
+    "ingestion-flow.svg": "9d35a08cc0f986d5363451246781bb46589946e9b7b55c5d90e00d753d136249",
+    "local-architecture.svg": "4494444aaaee5381f5d1dcbd0cd66a296106748b9b139c7748748d5edea380b5",
+    "openapi.json": "25e26759c7dd27154ba8cd9257269387d430494139117098ad3b33ee16714383",
+    "operations.md": "9c7c5f479f8ea22bc91db170c3b6f2b267e6926f6c5e16505bf3c2d3f9f98c02",
+    "review.md": "0ab2925e9676eb62dbc159ab48c20c53900a22d232ebe2e3dd0998037201f079",
+    "runtime-sequence.svg": "667b383a7ea3674574adef6d759f552ec6178a7b2ac810f8e89f7a629dd9a27a",
+    "walkthrough-poster.png": "3fe14e580fea8f1f17bb75acd776d3b73dd07671644542f6963c9fcec887d51e",
+    "walkthrough-script.md": "87bbe215960faa02ad9d248ba694a1d32b19047b431903a837a7ccc4256415bc",
+    "walkthrough.mp4": "80f5f35896e1cebeff7f7512d394a7fc390d541f3550c1eb59d38c35e47371b9",
+    "walkthrough.vtt": "10bac879ae7ff1a8a53f0f2cc468298627f41cffadda35c87555f4528efe1c63"
+  },
+  "scope": "global-product-master-demo-public"
+}
