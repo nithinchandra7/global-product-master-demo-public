@@ -1,6 +1,6 @@
 {
   "project": "master",
-  "implementation_fingerprint": "fb2c2e228114504398cf234f3726a3a21c746e1cb27fe8c31ac11f8e69399f6c",
+  "implementation_fingerprint": "30486c6188f507d12c3f2ed8165c08720ed0236b5e81bfcff9616bb7bb279763",
   "passed": true,
   "environment": {
     "python": "3.12.14",
@@ -13,8 +13,8 @@
       "scenario": "publication",
       "runs": 10,
       "passed": true,
-      "p50_ms": 10.027,
-      "p95_ms": 11.315,
+      "p50_ms": 16.336,
+      "p95_ms": 19.662,
       "output": {
         "records": [
           {
@@ -3585,7 +3585,7 @@
         ],
         "candidate_pairs": 240,
         "all_pairs": 7140,
-        "run_id": "867960e957574485b5a74dfc25f886f0",
+        "run_id": "5ce3e4ab08bf4e7aadc520c9c91ff68c",
         "revision": 2,
         "rules_version": "master-rules-1.0",
         "scenario": "clean",
@@ -4567,15 +4567,15 @@
           "publish_version": 1
         },
         "trace": {
-          "request_id": "019aa7e6b600485e87425b4b1410cd0e",
+          "request_id": "713a4cb7d81b491b9bc580e3e9bfaf1d",
           "stages": [
             {
               "component": "normalize",
               "label": "Validate regional schema and normalize taxonomy",
-              "duration_ms": 2.513
+              "duration_ms": 5.015
             }
           ],
-          "total_ms": 2.524
+          "total_ms": 5.047
         },
         "synthetic": true
       }
@@ -4584,8 +4584,8 @@
       "scenario": "ambiguity_conflict",
       "runs": 10,
       "passed": true,
-      "p50_ms": 3.524,
-      "p95_ms": 4.595,
+      "p50_ms": 7.343,
+      "p95_ms": 7.636,
       "output": {
         "records": [
           {
@@ -8202,7 +8202,7 @@
         ],
         "candidate_pairs": 243,
         "all_pairs": 7260,
-        "run_id": "99845760f44b47608c21b7a7885e4a37",
+        "run_id": "c17fa16928ff4521bd6e28e0662d36fc",
         "revision": 1,
         "rules_version": "master-rules-1.0",
         "scenario": "standard",
@@ -8210,15 +8210,15 @@
         "publish_version": 0,
         "publication": null,
         "trace": {
-          "request_id": "a59996a100324d6fac16b5e00f202933",
+          "request_id": "a65e6712fe3447b0b59b3882b799b7b1",
           "stages": [
             {
               "component": "normalize",
               "label": "Validate regional schema and normalize taxonomy",
-              "duration_ms": 2.451
+              "duration_ms": 5.674
             }
           ],
-          "total_ms": 2.462
+          "total_ms": 5.714
         },
         "synthetic": true
       }
@@ -8227,8 +8227,8 @@
       "scenario": "cannot_link",
       "runs": 10,
       "passed": true,
-      "p50_ms": 3.606,
-      "p95_ms": 4.252,
+      "p50_ms": 7.826,
+      "p95_ms": 7.998,
       "output": {
         "records": [
           {
@@ -8312,8 +8312,8 @@
       "scenario": "replay",
       "runs": 10,
       "passed": true,
-      "p50_ms": 16.559,
-      "p95_ms": 23.086,
+      "p50_ms": 26.719,
+      "p95_ms": 34.778,
       "output": {
         "records": [
           {
@@ -11884,7 +11884,7 @@
         ],
         "candidate_pairs": 240,
         "all_pairs": 7140,
-        "run_id": "3ba2720a5ce24f62b7976265ab161930",
+        "run_id": "b82a4351a819436aa94e122a09c6d133",
         "revision": 2,
         "rules_version": "master-rules-1.0",
         "scenario": "clean",
@@ -12866,15 +12866,15 @@
           "publish_version": 1
         },
         "trace": {
-          "request_id": "abeefcce04104b31afb933df4cd8de97",
+          "request_id": "9109f8a12c9c4033a71a8aad518055c6",
           "stages": [
             {
               "component": "normalize",
               "label": "Validate regional schema and normalize taxonomy",
-              "duration_ms": 2.55
+              "duration_ms": 3.747
             }
           ],
-          "total_ms": 2.569
+          "total_ms": 3.772
         },
         "synthetic": true
       }

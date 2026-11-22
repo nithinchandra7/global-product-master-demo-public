@@ -8,6 +8,7 @@ from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
 from .api import router
+from .local_security import install_local_boundary
 
 
 def create_app(root: Path | None = None, state_root: Path | None = None) -> FastAPI:
@@ -19,6 +20,7 @@ def create_app(root: Path | None = None, state_root: Path | None = None) -> Fast
         docs_url="/api/docs",
         openapi_url="/api/openapi.json",
     )
+    install_local_boundary(application)
     application.include_router(router(state_root))
 
     @application.get("/api/health")
